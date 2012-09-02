@@ -1,386 +1,487 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme bones\n"
+"Project-Id-Version: HTQ2 v1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:50+0100\n"
-"PO-Revision-Date: \n"
-"Language-Team: fulgor <frag.fulgor@gmail.com>\n"
+"PO-Revision-Date: 2012-08-27 20:17:48+0000\n"
+"Last-Translator: \n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: /home/fulgor/GIT/bones\n"
+"X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
 
 #: comments.php:12
+#@ bonestheme
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "Dieser Eintrag ist durch ein Passwort geschützt. Bitte Passwort eingeben, um Kommentare zu lesen."
 
-#: comments.php:23
-msgid "Response"
-msgstr "Antwort"
-
-#: comments.php:24
-msgid "Responses"
-msgstr "Antworten"
-
-#: comments.php:25
-msgid "One"
-msgstr "Eine"
-
-#: comments.php:26
-msgid "No"
-msgstr "Keine"
-
-#: comments.php:32
-msgid "to"
-msgstr "für"
-
-#: comments.php:59
+#: comments.php:51
+#@ bonestheme
 msgid "Comments are closed."
 msgstr "Kommentare sind nicht möglich."
 
-#: comments.php:70
+#: comments.php:62
+#@ bonestheme
 msgid "Leave a Reply"
 msgstr "Kommentar schreiben"
 
-#: comments.php:70
+#: comments.php:62
 #, php-format
+#@ bonestheme
 msgid "Leave a Reply to %s"
 msgstr "Kommentar schreiben zu %s"
 
 #: comments.php:78
-msgid "You must be"
-msgstr "Sie müssen"
-
-#: comments.php:78
-msgid "logged in"
-msgstr "angemeldet sein,"
-
-#: comments.php:78
-msgid "to post a comment"
-msgstr "um einen Kommentar zu hinterlassen."
-
-#: comments.php:86
+#@ bonestheme
 msgid "Logged in as"
 msgstr "Angemeldet als"
 
-#: comments.php:86
-msgid "Log out of this account"
-msgstr "Abmelden"
-
-#: comments.php:86
+#: comments.php:78
+#@ bonestheme
 msgid "Log out"
 msgstr "Abmelden"
 
-#: comments.php:93
+#: comments.php:85
+#@ bonestheme
 msgid "Name"
 msgstr "Name"
 
-#: comments.php:93
-#: comments.php:98
-msgid "(required)"
-msgstr "(Pflichtfeld)"
-
-#: comments.php:94
-msgid "Your Name"
-msgstr "Ihr Name"
-
-#: comments.php:98
-msgid "Email"
-msgstr "E-Mail"
-
-#: comments.php:99
-msgid "Your Email"
-msgstr "Ihre E-Mail"
-
-#: comments.php:100
-msgid "will not be published"
-msgstr "wird nicht angezeigt"
-
-#: comments.php:104
+#: comments.php:96
+#@ bonestheme
 msgid "Website"
 msgstr "Website"
 
-#: comments.php:105
-msgid "Your Website"
-msgstr "Ihre Website"
-
 #: comments.php:112
-msgid "Your Comment Here..."
-msgstr "Ihr Kommentar ..."
-
-#: comments.php:115
-msgid "Submit Comment"
-msgstr "Kommentar absenden"
-
-#: comments.php:120
+#@ bonestheme
 msgid "You can use these tags"
 msgstr "Sie können diese Auszeichnungen nutzen"
 
-#: header.php:23
-#, php-format
-msgid "Page %s"
-msgstr "Seite %s"
-
-#: taxonomy-custom_cat.php:22
-#: archive.php:9
+#: archive.php:11
+#: taxonomy-custom_cat.php:24
+#@ bonestheme
 msgid "Posts Categorized:"
 msgstr "Zugeordnete Einträge:"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: archive-custom_type.php:19
+#: archive.php:48
+#: index.php:17
+#: page-custom.php:23
+#: page.php:17
+#: search.php:19
+#: single-custom_type.php:32
+#: single.php:17
+#: taxonomy-custom_cat.php:34
+#@ bonestheme
 msgid "Posted"
 msgstr "Eingetragen"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: archive-custom_type.php:19
+#: archive.php:48
+#: index.php:17
+#: page-custom.php:23
+#: page.php:17
+#: search.php:19
+#: single-custom_type.php:32
+#: single.php:17
+#: taxonomy-custom_cat.php:34
+#@ bonestheme
 msgid "by"
 msgstr "von"
 
-#: taxonomy-custom_cat.php:32
-#: embed-post_meta.php:1
-#: single-custom_type.php:30
+#: archive.php:48
+#: index.php:17
+#: search.php:19
+#: single-custom_type.php:32
+#: single.php:17
+#: taxonomy-custom_cat.php:34
+#@ bonestheme
 msgid "filed under"
 msgstr "abgelegt unter"
 
-#: taxonomy-custom_cat.php:41
-msgid "Read more"
-msgstr "Lesen Sie weiter"
-
-#: functions.php:103
+#: functions.php:130
+#@ bonestheme
 msgid "(Edit)"
 msgstr "(Bearbeiten)"
 
-#: functions.php:107
+#: functions.php:134
+#@ bonestheme
 msgid "Your comment is awaiting moderation."
 msgstr "Ihr Kommentar wird noch moderiert."
 
-#: functions.php:124
+#: functions.php:151
+#@ bonestheme
 msgid "Search for:"
 msgstr "Suche nach:"
 
-#: functions.php:125
+#: functions.php:152
+#@ bonestheme
 msgid "Search the Site..."
 msgstr "durchsuchen ..."
 
-#: 404.php:11
+#: 404.php:13
+#@ bonestheme
 msgid "Epic 404 - Article Not Found"
 msgstr "404 - Artikel wurde nicht gefunden"
 
-#: 404.php:17
+#: 404.php:19
+#@ bonestheme
 msgid "The article you were looking for was not found, but maybe try looking again!"
 msgstr "Der gesuchte Artikel wurde nicht gefunden. Versuchen Sie es mit einem ähnlichen Suchbegriff."
 
-#: search.php:7
-#, fuzzy
-msgid "Search Results for:"
-msgstr "Suche nach:"
-
-#: search.php:23
-msgid "Read more on"
-msgstr "Lesen Sie mehr über"
-
-#: archive.php:13
+#: archive.php:16
+#@ bonestheme
 msgid "Posts Tagged:"
 msgstr "Einträge mit dem Schlagwort:"
 
-#: archive.php:17
-#: author.php:8
+#: archive.php:21
+#@ bonestheme
 msgid "Posts By:"
 msgstr "Einträge von:"
 
-#: archive.php:21
+#: archive.php:26
+#@ bonestheme
 msgid "Daily Archives:"
 msgstr "Tages-Archiv:"
 
-#: archive.php:25
+#: archive.php:31
+#@ bonestheme
 msgid "Monthly Archives:"
 msgstr "Monats-Archiv:"
 
-#: archive.php:29
+#: archive.php:36
+#@ bonestheme
 msgid "Yearly Archives:"
 msgstr "Jahres-Archiv:"
 
-#: single-custom_type.php:43
+#: library/custom-post-type.php:96
+#@ bonestheme
 msgid "Custom Tags"
 msgstr "Eigene Schlagworte"
 
-#: embed-tags.php:3
-msgid "Tag"
-msgstr "Schlagwort"
-
-#: embed-tags.php:4
-msgid "Tags"
-msgstr "Schlagworte"
-
-#: image.php:20
-msgid "Read the rest of this entry"
-msgstr "Lesen Sie den Rest dieses Eintrags"
-
-#: image.php:38
-msgid "Sorry, no attachments matched your criteria."
-msgstr "Kein Anhang entspricht Ihren Kriterien."
-
-#: embed-prev_next.php:3
+#: archive-custom_type.php:44
+#: archive.php:75
+#: index.php:44
+#: search.php:43
+#: taxonomy-custom_cat.php:59
+#@ bonestheme
 msgid "&laquo; Older Entries"
 msgstr "&laquo; Ältere Einträge"
 
-#: embed-prev_next.php:4
+#: archive-custom_type.php:45
+#: archive.php:76
+#: index.php:45
+#: search.php:44
+#: taxonomy-custom_cat.php:60
+#@ bonestheme
 msgid "Newer Entries &raquo;"
 msgstr "Jüngere Einträge  &raquo;"
 
-#: footer.php:9
-msgid "is powered by"
-msgstr "wird betrieben mit"
-
-#: embed-not_found.php:3
-msgid "Not Found"
-msgstr "Nicht gefunden"
-
-#: embed-not_found.php:6
-msgid "Sorry, but the requested resource was not found on this site."
-msgstr "Die angefragte Quelle konnte nicht gefunden werden."
-
-#: sidebar.php:15
-msgid "Please activate some Widgets."
-msgstr "Bitte nutzen Sie doch ein paar Widgets."
-
-#: library/bones.php:52
-msgid "Read more &raquo;"
-msgstr "Weiter &raquo;"
-
 #: library/custom-post-type.php:24
+#@ bonestheme
 msgid "Custom Types"
 msgstr "Eigene Arten"
 
 #: library/custom-post-type.php:25
+#@ bonestheme
 msgid "Custom Post"
 msgstr "Eigener Eintrag"
 
-#: library/custom-post-type.php:26
+#: library/custom-post-type.php:27
+#@ bonestheme
 msgid "Add New"
 msgstr "Hinzufügen"
 
-#: library/custom-post-type.php:27
+#: library/custom-post-type.php:28
+#@ bonestheme
 msgid "Add New Custom Type"
 msgstr "Eigene Art hinzufügen"
 
-#: library/custom-post-type.php:28
+#: library/custom-post-type.php:29
+#@ bonestheme
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: library/custom-post-type.php:29
+#: library/custom-post-type.php:30
+#@ bonestheme
 msgid "Edit Post Types"
 msgstr "Eintrags-Arten bearbeiten"
 
-#: library/custom-post-type.php:30
+#: library/custom-post-type.php:31
+#@ bonestheme
 msgid "New Post Type"
 msgstr "Neue Eintrags-Art"
 
-#: library/custom-post-type.php:31
+#: library/custom-post-type.php:32
+#@ bonestheme
 msgid "View Post Type"
 msgstr "Zeige Eintrags-Art"
 
-#: library/custom-post-type.php:32
+#: library/custom-post-type.php:33
+#@ bonestheme
 msgid "Search Post Type"
 msgstr "Suche Eintrags-Art"
 
-#: library/custom-post-type.php:33
+#: library/custom-post-type.php:34
+#@ bonestheme
 msgid "Nothing found in the Database."
 msgstr "In der Datenbank wurde nichts gefunden."
 
-#: library/custom-post-type.php:34
+#: library/custom-post-type.php:35
+#@ bonestheme
 msgid "Nothing found in Trash"
 msgstr "Im Papierkorb wurde nichts gefunden"
 
-#: library/custom-post-type.php:37
+#: library/custom-post-type.php:38
+#@ bonestheme
 msgid "This is the example custom post type"
 msgstr "Beispel für eine eigene Eintrags-Art"
 
-#: library/custom-post-type.php:73
+#: library/custom-post-type.php:75
+#@ bonestheme
 msgid "Custom Categories"
 msgstr "Eigene Kategorien"
 
-#: library/custom-post-type.php:74
+#: library/custom-post-type.php:76
+#@ bonestheme
 msgid "Custom Category"
 msgstr "Eigene Kategorie"
 
-#: library/custom-post-type.php:75
+#: library/custom-post-type.php:77
+#@ bonestheme
 msgid "Search Custom Categories"
 msgstr "Suche eigene Kategorien"
 
-#: library/custom-post-type.php:76
+#: library/custom-post-type.php:78
+#@ bonestheme
 msgid "All Custom Categories"
 msgstr "Alle eigenen Kategorien"
 
-#: library/custom-post-type.php:77
+#: library/custom-post-type.php:79
+#@ bonestheme
 msgid "Parent Custom Category"
 msgstr "Übergeordnete eigene Kategorie"
 
-#: library/custom-post-type.php:78
+#: library/custom-post-type.php:80
+#@ bonestheme
 msgid "Parent Custom Category:"
 msgstr "Übergeordnete eigene Kategorie:"
 
-#: library/custom-post-type.php:79
+#: library/custom-post-type.php:81
+#@ bonestheme
 msgid "Edit Custom Category"
 msgstr "Bearbeite eigene Kategorie"
 
-#: library/custom-post-type.php:80
+#: library/custom-post-type.php:82
+#@ bonestheme
 msgid "Update Custom Category"
 msgstr "Aktualisiere eigene Kategorie"
 
-#: library/custom-post-type.php:81
+#: library/custom-post-type.php:83
+#@ bonestheme
 msgid "Add New Custom Category"
 msgstr "Eigene Kategorie hinzufügen"
 
-#: library/custom-post-type.php:82
+#: library/custom-post-type.php:84
+#@ bonestheme
 msgid "New Custom Category Name"
 msgstr "Name für neue eigene Kategorie"
 
-#: library/custom-post-type.php:95
+#: library/custom-post-type.php:97
+#@ bonestheme
 msgid "Custom Tag"
 msgstr "Eigenes Schlagwort"
 
-#: library/custom-post-type.php:96
+#: library/custom-post-type.php:98
+#@ bonestheme
 msgid "Search Custom Tags"
 msgstr "Suche eigene Schlagworte"
 
-#: library/custom-post-type.php:97
+#: library/custom-post-type.php:99
+#@ bonestheme
 msgid "All Custom Tags"
 msgstr "Alle eigenen Schlagworte"
 
-#: library/custom-post-type.php:98
+#: library/custom-post-type.php:100
+#@ bonestheme
 msgid "Parent Custom Tag"
 msgstr "Übergeordnetes eigene Schlagwort"
 
-#: library/custom-post-type.php:99
+#: library/custom-post-type.php:101
+#@ bonestheme
 msgid "Parent Custom Tag:"
 msgstr "Übergeordnetes eigene Schlagwort:"
 
-#: library/custom-post-type.php:100
+#: library/custom-post-type.php:102
+#@ bonestheme
 msgid "Edit Custom Tag"
 msgstr "Bearbeite eigenes Schlagwort"
 
-#: library/custom-post-type.php:101
+#: library/custom-post-type.php:103
+#@ bonestheme
 msgid "Update Custom Tag"
 msgstr "Aktualisiere eigene Schlagwort"
 
-#: library/custom-post-type.php:102
+#: library/custom-post-type.php:104
+#@ bonestheme
 msgid "Add New Custom Tag"
 msgstr "Eigene Schlagwort hinzufügen"
 
-#: library/custom-post-type.php:103
+#: library/custom-post-type.php:105
+#@ bonestheme
 msgid "New Custom Tag Name"
 msgstr "Name für eigene Schlagwort hinzufügen"
 
-#~ msgid "No Posts Yet"
-#~ msgstr "Bislang keine Einträge"
-#~ msgid "Sorry, What you were looking for is not here."
-#~ msgstr "Wonach Sie gesucht haben, gibt es hier nicht."
-#~ msgid "<span class=\"read-more\">Read more on \""
-#~ msgstr "<span class=\"read-more\">Mehr lesen über \""
+#: 404.php:31
+#@ bonestheme
+msgid "This is the 404.php template."
+msgstr ""
+
+#: archive-custom_type.php:54
+#: archive.php:85
+#: index.php:54
+#: page-custom.php:47
+#: page.php:41
+#: single-custom_type.php:58
+#: single.php:41
+#: taxonomy-custom_cat.php:69
+#@ bonestheme
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: archive-custom_type.php:57
+#: archive.php:88
+#: index.php:57
+#: page-custom.php:50
+#: page.php:44
+#: single-custom_type.php:61
+#: single.php:44
+#: taxonomy-custom_cat.php:72
+#@ bonestheme
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: archive-custom_type.php:60
+#@ bonestheme
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: archive.php:91
+#@ bonestheme
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#: comments.php:86
+#@ bonestheme
+msgid "Your Name*"
+msgstr ""
+
+#: comments.php:90
+#@ bonestheme
+msgid "Mail"
+msgstr ""
+
+#: comments.php:91
+#@ bonestheme
+msgid "Your E-Mail*"
+msgstr ""
+
+#: comments.php:92
+#@ bonestheme
+msgid "(will not be published)"
+msgstr ""
+
+#: comments.php:97
+#@ bonestheme
+msgid "Got a website?"
+msgstr ""
+
+#: comments.php:104
+#@ bonestheme
+msgid "Your Comment here..."
+msgstr ""
+
+#: comments.php:107
+#@ bonestheme
+msgid "Submit"
+msgstr ""
+
+#: functions.php:128
+#, php-format
+#@ default
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: functions.php:153
+#@ default
+msgid "Search"
+msgstr ""
+
+#: index.php:60
+#@ bonestheme
+msgid "This is the error message in the index.php template."
+msgstr ""
+
+#: library/bones.php:206
+#@ bonestheme
+msgid "The Main Menu"
+msgstr ""
+
+#: library/bones.php:207
+#@ bonestheme
+msgid "Footer Links"
+msgstr ""
+
+#: library/custom-post-type.php:26
+#@ bonestheme
+msgid "All Custom Posts"
+msgstr ""
+
+#: page-custom.php:53
+#@ bonestheme
+msgid "This is the error message in the page-custom.php template."
+msgstr ""
+
+#: page.php:47
+#@ bonestheme
+msgid "This is the error message in the page.php template."
+msgstr ""
+
+#: search.php:53
+#@ bonestheme
+msgid "Sorry, No Results."
+msgstr ""
+
+#: search.php:56
+#@ bonestheme
+msgid "Try your search again."
+msgstr ""
+
+#: search.php:59
+#@ bonestheme
+msgid "This is the error message in the search.php template."
+msgstr ""
+
+#: single-custom_type.php:64
+#@ bonestheme
+msgid "This is the error message in the single-custom_type.php template."
+msgstr ""
+
+#: single.php:47
+#@ bonestheme
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: taxonomy-custom_cat.php:75
+#@ bonestheme
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+

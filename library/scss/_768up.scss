@@ -65,7 +65,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	max-width: 1140px;
+	max-width: 990px;// 1140px;
 }
 	/*
 		This is a combination of the 1140 grid and Twitter Boostrap.
@@ -115,12 +115,14 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee; 
+	// background: #eee; 
 	border: 0;
-			
+  
 	li {
 		float: left;
 		position: relative;
+		border: 1px solid #ccc;  // changed from 0
+    border-radius: 0px; //new content      
 				
 		a {
 			border-bottom: 0;

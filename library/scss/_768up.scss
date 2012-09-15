@@ -242,7 +242,12 @@ SIDEBARS & ASIDES
 			}
 		}
 	}
-
+	
+  .Advman_Widget .Advman_Widget img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
 
 	/* links widget */
 	.widget_links {}

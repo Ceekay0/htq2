@@ -182,7 +182,7 @@ and moe scalable.
 .nav {
 	border: 1px solid #ccc;
 	border-bottom: 0;
-	background: #FFF5EE ;
+	// background: #FFF5EE ;
 	li {
 	   background: #FFF5EE ;
 		a {
@@ -249,6 +249,15 @@ and moe scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+
+/********************
+ * SEARCH FORM
+ *******************/
+
+  #searchform {}
+  .widget_search {}
+  .screen-reader-text {display:none;}
 
 
 /*********************

@@ -1312,12 +1312,9 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 823, ../scss/_base.scss */
-.sidebar {
-  background: #FFF5EE;
-  -webkit-box-shadow: 0 0 10px #555251;
-  -moz-box-shadow: 0 0 10px #555251;
-  box-shadow: 0 0 10px #555251; }
+/* line 825, ../scss/_base.scss */
+#sidebar1 {
+  display: none; }
 
 /* line 835, ../scss/_base.scss */
 .widget ul li {
@@ -1663,27 +1660,35 @@ you can add resource intensive styles.
   *********************/
   /* line 216, ../scss/_768up.scss */
   .sidebar {
-    margin-top: 2.2em; }
+    margin-top: 2.2em;
+    background: #FFF5EE;
+    -webkit-box-shadow: 0 0 10px #555251;
+    -moz-box-shadow: 0 0 10px #555251;
+    box-shadow: 0 0 10px #555251; }
 
-  /* line 220, ../scss/_768up.scss */
+  /* line 222, ../scss/_768up.scss */
+  #sidebar1 {
+    display: block; }
+
+  /* line 226, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
 
-  /* line 225, ../scss/_768up.scss */
+  /* line 231, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0; }
-    /* line 230, ../scss/_768up.scss */
+    /* line 236, ../scss/_768up.scss */
     .widget ul li {
       margin-bottom: 0.75em;
       /* deep nesting */ }
-      /* line 238, ../scss/_768up.scss */
+      /* line 244, ../scss/_768up.scss */
       .widget ul li ul {
         margin-top: 0.75em;
         padding-left: 1em; }
 
-  /* line 246, ../scss/_768up.scss */
+  /* line 252, ../scss/_768up.scss */
   .Advman_Widget .Advman_Widget img {
     margin: auto;
     max-width: 100%;
@@ -1708,7 +1713,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 351, ../scss/_768up.scss */
+  /* line 357, ../scss/_768up.scss */
   .footer-links ul li {
     /* 
     be careful with the depth of your menus.

@@ -214,7 +214,13 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
+	  margin-top: 2.2em;
+	  background: #FFF5EE ; // SeaShell
+    @include box-shadow(0 0 10px #555251);
+}
+
+#sidebar1 {
+    display: block;
 }
 
 	.widgettitle {

@@ -820,11 +820,11 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {
-          background: #FFF5EE ; // SeaShell
-          @include box-shadow(0 0 10px #555251);
-  
-}
+.sidebar {}
+
+#sidebar1{
+    display: none;
+    }
 
 	.widgettitle {}
 

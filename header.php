@@ -51,7 +51,7 @@
 						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					
-					<?php get_search_form(); ?>
+					<?php //get_search_form(); ?>
 
 				
 				</div> <!-- end #inner-header -->

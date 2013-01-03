@@ -47,8 +47,12 @@
 					<?php // bloginfo('description'); ?>
 					
 					
-					<nav role="navigation">
+					<nav role="navigation" id="desktop-nav">
 						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+					</nav>
+
+					<nav role="navigation" id="handheld-nav">
+						<?php bones_handheld_nav(); ?>
 					</nav>
 					
 					<?php //get_search_form(); ?>

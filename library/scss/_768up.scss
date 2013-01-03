@@ -114,9 +114,22 @@ HEADER SYTLES
 NAVIGATION STYLES
 *********************/
 
+/* show the desktop nav */
+
+#desktop-nav {
+	display:block;
+}
+
+/* end desktop nav selector */
+
 .nav {
 	// background: #eee; 
+	background: $m-grey;
+	position: relative;
+	bottom: -1em;
+	padding-left: 2em;
 	border: 0;
+	width: 100%;
   
 	li {
 		float: left;
@@ -208,6 +221,14 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 	
 } /* end .nav */
+	
+/* HANDHELD NAV */
+
+#handheld-nav {
+	display: none;
+}
+
+/* END HANDHELD NAV */
 	
 /*********************
 SIDEBARS & ASIDES

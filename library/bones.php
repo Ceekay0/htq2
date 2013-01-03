@@ -204,7 +204,8 @@ function bones_theme_support() {
 	register_nav_menus(                      
 		array( 
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
+			'footer-links' => __( 'Footer Links', 'bonestheme' ), // secondary nav in footer
+			'handheld-nav' => __( 'Handheld Menu', 'bonestheme' ) // nav only for handhelds
 		)
 	);
 } /* end bones theme support */
@@ -249,6 +250,24 @@ function bones_footer_links() {
     	'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 	));
 } /* end bones footer link */
+
+// the handheld menu 
+function bones_handheld_nav() {
+	// display the wp3 menu if available
+    wp_nav_menu(array( 
+    	'container' => false,                           // remove nav container
+    	'container_class' => 'handheld-menu clearfix',           // class of container (should you choose to use it)
+    	'menu' => 'Handheld Menu',                      // nav name
+    	'menu_class' => 'nav handheld-nav clearfix',         // adding custom nav class
+    	'theme_location' => 'handheld-nav',                 // where it's located in the theme
+    	'before' => '',                                 // before the menu
+        'after' => '',                                  // after the menu
+        'link_before' => '',                            // before each link
+        'link_after' => '',                             // after each link
+        'depth' => 0,                                   // limit the depth of the nav
+    	'fallback_cb' => 'bones_handheld_nav_fallback'      // fallback function
+	));
+} /* end bones handheld nav */
  
 // this is the fallback for header menu
 function bones_main_nav_fallback() { 
@@ -258,6 +277,11 @@ function bones_main_nav_fallback() {
 // this is the fallback for footer menu
 function bones_footer_links_fallback() { 
 	/* you can put a default here if you like */ 
+}
+
+// fallback for handheld nav
+function bones_handheld_nav_fallback() {
+	/* no fallback defined, but might come in handy */
 }
 
 /*********************

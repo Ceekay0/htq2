@@ -245,8 +245,21 @@ SIDEBARS & ASIDES
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+	//	border-bottom: 2px solid #444;
 		margin-bottom: 0.75em;
+		padding-left: 0.5em;
+		padding-top: 0.2em;
+		min-height: 1.8em;
+		//@include background-image(linear-gradient(#e695ba, #d34285));
+		//@include border-top-radius($b-radius);
+		//@include border-right-radius($b-radius);
+		font-family: "Great Vibes";
+		font-weight: 400;
+		font-size: 1.7em;
+		border-bottom-style: solid;
+		border-width: $b-width * 0.5;
+		color: $bones-pink;
+
 	}
 
 	.widget {

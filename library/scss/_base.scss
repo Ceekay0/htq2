@@ -21,8 +21,8 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	// color: #565656;
-  // 	background-color: #DEDEDE;
-  background-image:url(../images/background.png);
+  @include background(linear-gradient(LightGray, DimGray) left repeat);
+  // background-image:url(../images/background.png);
   background-size:100% auto;
 //  background-repeat:repeat-y;
 }
@@ -71,12 +71,16 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-
+/*
 .wrap {
 	width: 90%;
 	margin: 0 auto;
 }
-
+*/
+#inner-content{
+  // width: 90%;
+  margin: 0 auto;
+}
 /*
 No Grid? Say Whaaaat?
 There's really no need for all that
@@ -119,9 +123,9 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: sans-serif;
+	font-family: $serif;//sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 400;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -185,7 +189,7 @@ and moe scalable.
 	border-bottom: 0;
 	// background: #FFF5EE ;
 	li {
-	   background: #FFF5EE ;
+	   background: $l-grey; ;
 		a {
 			display: block;
 			text-decoration: none;
@@ -273,8 +277,19 @@ and moe scalable.
 POSTS & CONTENT STYLES
 *********************/
 
+#inner-content {
+    border-right-style:solid;
+    border-bottom-style:solid;
+    border-left-style:solid;
+    border-width: $b-width * 2;
+    border-color: $d-grey;
+    @include border-bottom-radius(10px);
+    background: $white;
+    // padding: 2.2em; breaking layout on mobiles
+}
+
 #content {
-	margin-top: 2.2em;
+//	margin-top: 2.2em;
 }
 
 		.hentry {
@@ -297,10 +312,14 @@ POSTS & CONTENT STYLES
 		/* want to style individual post classes? Booya! */
 		.post-id {} /* post by id (i.e. post-3) */
 		.post {
-		      padding: 10px;
+		      padding: 1em 1em 0 1em;
 		      margin-bottom:15px;
-		      background: #FFF5EE ; // SeaShell
-		      @include box-shadow(0 0 10px #555251);
+		      //@include box-shadow(0 0 5px #555251);
+	          border-bottom-width: 50px;//$b-width * 2;
+	          border-color: $bones-pink;//$d-grey;
+	          //border-bottom-style: dotted;
+	          @include border-image(url(../images/handbagborder_150.png) 0% 0% 100% 0% round);
+	          // max-width: 90%;
 		} /* general post style */
 		
 /*		.page {
@@ -313,8 +332,8 @@ POSTS & CONTENT STYLES
     .type-page {
           padding: 10px;
           margin-bottom:15px;
-          background: #FFF5EE ; // SeaShell overrides background image in webkit browsers for some fucking reason
-          @include box-shadow(0 0 10px #555251);
+          // background: grey ; // overrides background image in webkit browsers for some fucking reason
+          //@include box-shadow(0 0 10px #555251);
     } /* general article on a page-type style */
    
    
@@ -324,16 +343,45 @@ POSTS & CONTENT STYLES
 		.category-slug {} /* style by category (i.e. category-videos) */
 		.tag-slug {} /* style by tag (i.e. tag-news) */
 
+/** POST **/
+
+.article-header{
+  //background:$l-grey;
+  //border-color:$l-grey;
+  //border-style:solid;
+//  @include border-top-radius(5px);
+//  @include border-bottom-radius(5px);
+//  @include border-left-radius(5px);
+//  @include border-right-radius(5px);
+  border-width:$b-width;
+  padding-bottom: 0.5em;
+}
+
+.article-header h1{
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 1.5em;
+}
+
+.article-header h1 a{
+  color:black;
+}
+
 		/* post meta */
 		.meta {
-			color: #999;
+			//color: #999;
+			color:lightslategrey;
+			font-size:0.75em;
+			margin-bottom:0.1em;
+			margin-top:0.1em;
 
 			time {}
 		}
 
 		/* post content */
 		.post-content {
-
+    font-size:90%;
+    color:grey;
 			p {}
 
 
@@ -793,7 +841,11 @@ COMMENT FORM STYLES
 		textarea {
 			resize: none;
 			width: 97.3%;
-			height: 150px;
+			// height: 150px;
+
+			&:focus {
+				height: 150px;
+			}
 		}
 
 	}
@@ -899,4 +951,12 @@ FOOTER STYLES
 
 
 	.attribution {}
+
+/********************
+SEARCH BUTTON 
+********************/
+
+#searchsubmit {
+@extend .button;
+}
 

@@ -65,7 +65,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	max-width: 990px;// 1140px;
+//	max-width: $max-width;// 1140px;
 }
 	/*
 		This is a combination of the 1140 grid and Twitter Boostrap.
@@ -106,7 +106,11 @@ LAYOUT & GRID STYLES
 HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+        max-width: $max-width;
+        width:90%;
+
+}
 
 	#logo {}
 	
@@ -135,7 +139,7 @@ NAVIGATION STYLES
 		float: left;
 		position: relative;
 		border: 1px solid #ccc;  // changed from 0
-    border-radius: 0px; //new content      
+    	@include border-top-radius($b-radius);
 				
 		a {
 			border-bottom: 0;
@@ -221,7 +225,7 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 	
 } /* end .nav */
-	
+
 /* HANDHELD NAV */
 
 #handheld-nav {
@@ -235,10 +239,14 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	  margin-top: 2.2em;
-	  background: #FFF5EE ; // SeaShell
-    @include box-shadow(0 0 10px #555251);
+	 // margin: 2.2em -$b-width -$b-width 0;
+	  border-color: $d-grey;
+	  border-width: $b-width; 
+	  //border-style: solid;
+      //@include box-shadow(0 0 5px #555251);
 }
+
+
 
 #sidebar1 {
     display: block;
@@ -264,7 +272,7 @@ SIDEBARS & ASIDES
 
 	.widget {
 		padding: 0 10px;
-		margin: 2.2em 0;
+		margin: 10px 0;
 		
 		ul {
 			li {
@@ -376,6 +384,26 @@ SIDEBARS & ASIDES
 	.widget_text {}
 	.textwidget p {}
 	
+/*********************
+ * CONTENT STYLES
+ ********************/
+
+#inner-content {
+//    border-right-style:solid;
+//    border-bottom-style:solid;
+//    border-left-style:solid;
+//    @include border-bottom-radius(10px);
+//    background: white;
+      padding: 2.2em;
+      max-width: $max-width;//90%;
+      width: 90%
+}
+
+
+.article-header{
+
+}
+
 
 /*********************
 FOOTER STYLES

@@ -22,17 +22,33 @@ upon your base.scss styles.
  *********************/
 
 .header {  
-         background-image:url(../images/htq_header_v1.png);
+         background-image:url(../images/hq_logo.png);
          background-size:100% auto;
          background-repeat:no-repeat;
+         margin:0 auto;
+         // max-width: $max-width;
+         // width:90%;
+         padding:0 2.2em;
+         border-width:0 $b-width * 2;
+         border-color:$d-grey;
+         border-style:solid;
         }
+.header img{
+        margin:0 auto;
+}
 
+#logo{
+	visibility:hidden;
+}
 	
 /*********************
 NAVIGATION STYLES
 *********************/
 
-.nav {}
+.nav {
+
+
+}
 
 	/* .menu is clearfixed inside mixins.scss */
 	.menu {
@@ -81,6 +97,10 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+#inner-content{
+  max-width:$max-width;
+}
 
 /* post content */
 .post-content {
